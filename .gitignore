@@ -4,3 +4,4 @@
 .idea/vcs.xml
 .idea/workspace.xml
 encodings.xml
+heroku-buildpack-webpack.iml

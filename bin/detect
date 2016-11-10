@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ -f $1/webpack.config.heroku.js ]; then
+if [ -f $1/internals/webpack.config.production.js ]; then
   echo "Webpack buildpack"
   exit 0
 else
