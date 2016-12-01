@@ -11,4 +11,5 @@ export_env_dir $env_dir
 cd $build_dir
 
 head "Run the build command"
+npm run test:clean && rimraf ./build
 $(npm bin)/webpack --config internals/webpack/webpack.prod.babel.js --color -p
