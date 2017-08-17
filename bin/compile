@@ -12,3 +12,4 @@ cd $build_dir
 
 head "Run the build command"
 $(npm bin)/webpack --config internals/webpack/webpack.prod.babel.js --color -p
+npm run build:clear
