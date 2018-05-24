@@ -10,6 +10,8 @@ source $bp_dir/lib/common.sh
 export_env_dir $env_dir
 cd $build_dir
 
+sudo apt-get install nasm
+
 head "Run the build command"
 $(npm bin)/webpack --config internals/webpack/webpack.prod.babel.js --color -p
 npm run build:clear
