@@ -17,4 +17,4 @@ echo "-----> TEST2 END"
 head "Run the build command"
 #$(npm bin)/webpack --config internals/webpack/webpack.prod.babel.js --color -p --progress
 npm run build
-#npm run build:clear
+npm run build:clear
