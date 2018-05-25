@@ -10,6 +10,10 @@ source $bp_dir/lib/common.sh
 export_env_dir $env_dir
 cd $build_dir
 
+echo "-----> TEST2 $PATH"
+nasm -v
+echo "-----> TEST2 END"
+
 head "Run the build command"
-$(npm bin)/webpack --config internals/webpack/webpack.prod.babel.js --color -p
+$(npm bin)/webpack --config internals/webpack/webpack.prod.babel.js --color -p --progress
 npm run build:clear
