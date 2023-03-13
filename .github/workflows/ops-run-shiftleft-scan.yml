@@ -1,0 +1,13 @@
+name: _run static code analysis
+on:
+  pull_request:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  run-code-analysis:
+    uses: studykik/ops-gaction-shiftleft-workflows/.github/workflows/ops-run-shiftleft-scanner.yml@v1
+    secrets: inherit
